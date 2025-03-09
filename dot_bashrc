@@ -1,0 +1,15 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+fastfetch
+alias ls='eza'
+alias cat='bat'
+alias cd='z'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+eval "$(zoxide init bash)"
+eval "$(starship init zsh)"
