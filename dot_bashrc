@@ -10,6 +10,7 @@ alias ls='eza'
 alias cat='bat'
 alias cd='z'
 alias grep='grep --color=auto'
+echo 'export EDITOR=nvim' >> ~/.bashrc
 PS1='[\u@\h \W]\$ '
 eval "$(zoxide init bash)"
 eval "$(starship init zsh)"
