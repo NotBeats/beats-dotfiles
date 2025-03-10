@@ -1,0 +1,15 @@
+* {
+	dark-purple: #36194d;
+	base07: #f4f4f1;
+	distro: #7942a3;
+	base0C: #053464;
+}
+
+* {
+	main-bg: @dark-purple;
+	main-fg: @base07;
+	main-br: @distro;
+	input-bg: @base0C;
+	select-bg: @distro;
+	select-fg: @dark-purple;
+}

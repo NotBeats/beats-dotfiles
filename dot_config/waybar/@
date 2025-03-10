@@ -1,0 +1,295 @@
+@import 'colors.css';
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Hack-Regular, sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+window#waybar {
+    background-color: rgba(0, 43, 54, 0.0);  /* Transparent background */
+    color: @base0C;
+}
+
+tooltip {
+    background-color: @base0E;
+    border: 2px solid @base0C;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @base07;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+/* Floating module style - common properties */
+#workspaces button,
+#mode,
+#clock,
+#cpu,
+#custom-scripts,
+#memory,
+#temperature,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-media,
+#custom-power,
+#idle_inhibitor,
+#language,
+#backlight,
+#window,
+#disk {
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+    background-color: @base0A;
+    color: @base07;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Workspaces module */
+#workspaces button {
+    padding: 0 6px;
+    background-color: @base0A;
+    color: @color4;
+    min-width: 30px;
+}
+
+#workspaces button:hover {
+    background-color: @base00;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#workspaces button.active {
+    background-color: @base0C;
+    color: @color0;
+    box-shadow: inset 0 0 0 2px @base01;
+    text-shadow: 0 0 5px @base01;
+}
+
+#workspaces button.urgent {
+    background-color: @vase00;
+    color: @base07;
+}
+
+/* Clock module, Scripts module and window title */
+#clock, #window {
+    background-color: @base0A;
+    color: @base07;
+    font-weight: bold;
+}
+
+#battery {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+        color: #ffffff;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: transparent;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#power-profiles-daemon {
+    padding-right: 15px;
+}
+
+#power-profiles-daemon.performance {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.balanced {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.power-saver {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+label:focus {
+    background-color: transparent;
+}
+
+#cpu {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#memory {
+    background-color: transparent;
+}
+
+#disk {
+    background-color: transparent;
+}
+
+#backlight {
+    background-color: transparent;
+}
+
+#network {
+    background-color: transparent;
+}
+
+#network.disconnected {
+    background-color: transparent;
+}
+
+#pulseaudio {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#pulseaudio.muted {
+    background-color: transparent;
+    color: #2a5c45;
+}
+
+#wireplumber {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#wireplumber.muted {
+    background-color: transparent;
+}
+
+#custom-media {
+    background-color: transparent;
+    color: #ffffff;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: transparent;
+}
+
+#custom-media.custom-vlc {
+    background-color: transparent;
+}
+
+#temperature {
+    background-color: transparent;
+}
+
+#temperature.critical {
+    background-color: transparent;
+}
+
+#tray {
+    background-color: transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: transparent;
+}
+
+#idle_inhibitor {
+    background-color: transparent;
+}
+
+#idle_inhibitor.activated {
+    background-color: transparent;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: transparent;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: transparent;
+}
+
+#mpd.stopped {
+    background-color: transparent;
+}
+
+#mpd.paused {
+    background-color: transparent;
+}
+
+#keyboard-state {
+    background: transparent;
+    color: #ffffff;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: white;
+}
+
+#privacy-item.screenshare {
+    background-color: transparent;
+}
+
+#privacy-item.audio-in {
+    background-color: transparent;
+}
+
+#privacy-item.audio-out {
+    background-color: transparent;
+}

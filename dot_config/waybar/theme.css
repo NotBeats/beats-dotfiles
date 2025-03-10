@@ -1,0 +1,68 @@
+/* ramadan */
+@define-color base00 #342147; /* dark purple */
+@define-color base01 #5a4b68; /* dark purplish grayish */
+@define-color base02 #7f7489; /* gray */
+@define-color base03 #a59da9; /* dark gray */
+@define-color base04 #cbc6ca; /* gray */
+@define-color base05 #f0efeb; /* white */
+@define-color base06 #f2f2ee; /* white */
+@define-color base07 #f4f4f1; /* white */
+@define-color base08 #307eb3; /* steel blue */
+@define-color base09 #407f9d; /* steel blue */
+@define-color base0A #522971; /* light */
+@define-color base0B #3A2C6E; /* medium */
+@define-color base0C #053464; /* dark */
+@define-color base0D #4775d6; /* royal blue */
+@define-color base0E #306cb2; /* royal blue */
+@define-color base0F #1c78da; /* bright blue */
+@define-color dark-purple #36194D;
+@define-color distro #7942A3; /* lightest */
+
+@define-color red #f38ba8;
+@define-color yellow #f9e2af;
+@define-color white @base07;
+@define-color black #000000;
+
+/* 
+  bg - background
+  fg - foreground
+  br - border
+*/
+
+/* Main Colors */
+
+@define-color shadow        shade(@dark-purple, 0.5);
+@define-color main-fg         @white;
+@define-color main-bg         @dark-purple;
+@define-color main-br         @white;
+
+@define-color active-bg       @distro;
+@define-color active-fg       @dark-purple;
+
+@define-color hover-bg        @base0A;
+@define-color hover-fg        alpha(@white, 0.75);
+
+/* Module Colors */
+
+@define-color module-fg       @white;
+@define-color workspaces      @base0C;
+
+@define-color cpuinfo         @base0C;
+@define-color memory          @base0B;
+@define-color cpu             @base0A;
+@define-color distro-fg       @white;
+@define-color distro-bg       @distro;
+@define-color time            @base0A;
+@define-color date            @base0B;
+@define-color tray            @base0C;
+
+@define-color pulseaudio      @base0C;
+@define-color backlight       @base0B;
+@define-color battery         @base0A;
+@define-color power           @distro;
+
+/* State Colors */
+
+@define-color warning         @yellow;
+@define-color critical        @red;
+@define-color charging        @white;
