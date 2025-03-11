@@ -230,6 +230,7 @@ bindsym $mod+r mode "resize"
     exec waybar
     exec $term
     exec hyprpaper
+    exec zen-browser
 
 # Start flavours
 ## Base16 ramadan
