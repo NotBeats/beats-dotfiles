@@ -231,6 +231,7 @@ bindsym $mod+r mode "resize"
     exec $term
     exec hyprpaper
     exec zen-browser
+    exec gammastep -c ~/.config/gammastep/config.ini
 
 # Start flavours
 ## Base16 ramadan
