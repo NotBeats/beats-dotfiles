@@ -229,7 +229,7 @@ bindsym $mod+r mode "resize"
 
     exec waybar
     exec $term
-    exec hyprpaper
+    exec swww ~/wallpapers/ramadan-wallpaper.png
     exec zen-browser
     exec gammastep -c ~/.config/gammastep/config.ini
 
