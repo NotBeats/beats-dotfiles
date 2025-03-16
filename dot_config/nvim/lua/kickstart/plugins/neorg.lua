@@ -6,6 +6,10 @@ return {
 		require("neorg").setup({
 			load = {
 				["core.defaults"] = {},
+				["core.keybinds"] = {},
+				["core.looking-glass"] = {},
+				["core.integrations.treesitter"] = {},
+				["core.ui"] = {},
 				["core.concealer"] = {
 					config = {
 						icon_preset = "diamond",
