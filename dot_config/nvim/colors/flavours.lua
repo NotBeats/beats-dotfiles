@@ -13,9 +13,9 @@ local gui09 = "#407f9d"
 local gui0A = "#CD90FC"
 local gui0B = "#ffb84d"
 local gui0C = "#ffd700"
-local gui0D = "#4775d6"
-local gui0E = "#306cb2"
-local gui0F = "#1c78da"
+local gui0D = "#73b3ff"
+local gui0E = "#73b3ff"
+local gui0F = "#3e9bff"
 
 local cterm00 = 0
 local cterm03 = 8
