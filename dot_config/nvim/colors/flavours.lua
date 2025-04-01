@@ -1,21 +1,21 @@
--- ramadan scheme by Beats
+-- retro-city scheme by Beats
 
-local gui00 = "#342147"
-local gui01 = "#5a4b68"
-local gui02 = "#7f7489"
-local gui03 = "#a59da9"
-local gui04 = "#cbc6ca"
-local gui05 = "#f0efeb"
-local gui06 = "#f2f2ee"
-local gui07 = "#f4f4f1"
-local gui08 = "#cd90fc"
-local gui09 = "#407f9d"
-local gui0A = "#CD90FC"
-local gui0B = "#ffb84d"
-local gui0C = "#ffd700"
-local gui0D = "#73b3ff"
-local gui0E = "#73b3ff"
-local gui0F = "#3e9bff"
+local gui00 = "#12252a"
+local gui01 = "#3b484e"
+local gui02 = "#656b72"
+local gui03 = "#8e8f96"
+local gui04 = "#b8b2ba"
+local gui05 = "#e1d6de"
+local gui06 = "#e6dce3"
+local gui07 = "#eae2e8"
+local gui08 = "#8c6c9d"
+local gui09 = "#ad5d92"
+local gui0A = "#8c6c9d"
+local gui0B = "#9c7b43"
+local gui0C = "#557ba3"
+local gui0D = "#457ea4"
+local gui0E = "#477f98"
+local gui0F = "#70769c"
 
 local cterm00 = 0
 local cterm03 = 8
@@ -38,7 +38,7 @@ vim.cmd([[
   highlight clear
   syntax reset
 ]])
-vim.g.colors_name = "base16-ramadan"
+vim.g.colors_name = "base16-retro-city"
 
 -- Vim editor colors                    fg bg ctermfg ctermbg attr guisp
 vim.api.nvim_set_hl(0, "Normal", { fg = gui05, bg = gui00, ctermfg = cterm05, ctermbg = cterm00 })
@@ -112,7 +112,7 @@ vim.api.nvim_set_hl(0, "String", { fg = gui0B, ctermfg = cterm0B })
 vim.api.nvim_set_hl(0, "Structure", { fg = gui0E, ctermfg = cterm0E })
 vim.api.nvim_set_hl(0, "Tag", { fg = gui0A, ctermfg = cterm0A })
 vim.api.nvim_set_hl(0, "Todo", { fg = gui0A, bg = gui01, ctermfg = cterm0A, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, "Type", { fg = gui0C, ctermfg = cterm0C })
+vim.api.nvim_set_hl(0, "Type", { fg = gui0A, ctermfg = cterm0A })
 vim.api.nvim_set_hl(0, "Typedef", { fg = gui0A, ctermfg = cterm0A })
 
 -- C highlighting
