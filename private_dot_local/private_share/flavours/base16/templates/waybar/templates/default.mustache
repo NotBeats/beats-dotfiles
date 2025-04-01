@@ -21,3 +21,46 @@
 @define-color base0D #{{base0D-hex}};
 @define-color base0E #{{base0E-hex}};
 @define-color base0F #{{base0F-hex}};
+
+@define-color red #f38ba8;
+@define-color yellow #f9e2af;
+@define-color white @base07;
+@define-color black #000000;
+
+/* Main Colors */
+
+@define-color shadow        shade(@base0F, 0.5);
+@define-color main-fg         @white;
+@define-color main-bg         @base0F;
+@define-color main-br         @white;
+
+@define-color active-bg       @base0E;
+@define-color active-fg       @base0F;
+
+@define-color hover-bg        @base0A;
+@define-color hover-fg        alpha(@white, 0.75);
+
+/* Module Colors */
+
+@define-color module-fg       @white;
+@define-color workspaces      @base0C;
+
+@define-color cpuinfo         @base0C;
+@define-color memory          @base0B;
+@define-color cpu             @base0A;
+@define-color distro-fg       @white;
+@define-color distro-bg       @base0E;
+@define-color time            @base0A;
+@define-color date            @base0B;
+@define-color tray            @base0C;
+
+@define-color pulseaudio      @base0C;
+@define-color backlight       @base0B;
+@define-color battery         @base0A;
+@define-color power           @base0E;
+
+/* State Colors */
+
+@define-color warning         @yellow;
+@define-color critical        @red;
+@define-color charging        @white;
