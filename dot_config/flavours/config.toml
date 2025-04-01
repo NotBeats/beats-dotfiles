@@ -50,18 +50,23 @@ subtemplate = "default-256"
 
 
 [[items]]
-file = "~/.config/waybar/colors.css"
+file = "~/.config/waybar/themes/css/flavours.css"
 template = "waybar"
+
+[[items]] 
+file = "~/.config/rofi/themes/flavours.rasi"
+template = "rofi"
 rewrite = true
 
 [[items]]
 file = "~/.config/nvim/colors/flavours.lua"
 template = "nvim"
 rewrite = true
-# 
-# [[items]]
-# file = "~/.config/beautifuldiscord/style.css"
-# template = "styles"
-# subtemplate = "css-variables"
-# start= "/* Start flavours */"
-# end = "/* End flavours */"
+
+#
+#[[items]]
+#file = "~/.config/beautifuldiscord/style.css"
+#template = "styles"
+#subtemplate = "css-variables"
+#start= "/* Start flavours */"
+#end = "/* End flavours */"
